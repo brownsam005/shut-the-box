@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>SHUT THE BOX</title>
+        <link rel= "shortcut icon" href="" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./game.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div id="playerNames" class = "players">
+                <h1>Shut the Box</h1>
+                <input id = "player1" type = "text">
+                <input id = "player2" type = "text">
+                <button id = "start">START THE GAME</button>
+            </div>
+            <div id= "after-start">
+                <h1 id="turn"></h1>
+                <h1 id="round">Round #</h1>
+            <div class = "board">
+                <p id="box1" class="box" class = "number">1</p>
+                <p id="box2" class="box" class = "number">2</p>
+                <p id="box3" class="box" class = "number">3</p>
+                <p id="box4" class="box" class = "number">4</p>
+                <p id="box5" class="box" class = "number">5</p>
+                <p id="box6" class="box" class = "number">6</p>
+                <p id="box7" class="box" class = "number">7</p>
+                <p id="box8" class="box" class = "number">8</p>
+                <p id="box9" class="box" class = "number">9</p>
+            </div>
+            <div class = "dice">
+                <i id="first-dice" class="bi bi-dice-4"></i>
+                <i id="second-dice" class="bi bi-dice-4"></i>
+                <h1 id="sum-number">Sum: #</h1>
+                <button id= "roll">Roll</button>
+                <button id= "individual">Individual Dice</button>
+                <button id= "sum">Sum of the Dice</button>
+                <button id= "end">End of Your Turn</button>
+            </div>
+            </div>
+            <div id = "score">
+            <div class= "scorecard">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th id="p1name">Player 1</th>
+                            <th id="p2name">Player 2</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div id="finishGame" class= "winner">
+                <h1 id= "winner" >Winner: </h1>
+                <button id="play-again">Play Again</button>
+            </div>
+            </div>
+        </main>
+    </body>
+</html>
